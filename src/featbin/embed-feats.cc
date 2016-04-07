@@ -1,4 +1,4 @@
-// featbin/embed.cc
+// featbin/embed-feats.cc
 
 // Copyright 2009-2016 (author: Steven Du)
 
@@ -29,12 +29,8 @@ int main(int argc, char *argv[]) {
 
     const char *usage =
         "Copy features [and possibly change format]\n"
-        "Usage: copy-feats [options] <w2v-dict-rspecifier><feature-rspecifier> <feature-wspecifier>\n"
-        "e.g.: copy-feats --w2vdim=20 ark:./dict.ark ark:./textfile.ark ark:- \n"
-        " or: copy-feats ark:foo.ark ark,t:txt.ark\n"
-        "See also: copy-matrix, copy-feats-to-htk, copy-feats-to-sphinx, select-feats,\n"
-        "extract-rows, subset-feats, subsample-feats, splice-feats, paste-feats,\n"
-        "concat-feats\n";
+        "Usage: embed-feats [options] <w2v-dict-rspecifier><feature-rspecifier> <feature-wspecifier>\n"
+        "e.g.: embed-feats --w2vdim=20 ark:./dict.ark ark:./textfile.ark ark:- \n";
 
     ParseOptions po(usage);
     bool binary = true;
