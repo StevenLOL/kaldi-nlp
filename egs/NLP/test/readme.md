@@ -1,3 +1,7 @@
+
+
+
+
 This folder test the word embedding in Kaldi
 
 Given sentence and a word-2-vector , this program will embedding the word vector during data preprocessing
