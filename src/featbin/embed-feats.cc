@@ -40,14 +40,7 @@ int main(int argc, char *argv[]) {
     int w2vdim=20;
 
     po.Register("w2vdim", &w2vdim, "w2vdim for word to vector ");
-    /*
-    po.Register("sphinx-in", &sphinx_in, "Read input as Sphinx features");
-    po.Register("binary", &binary, "Binary-mode output (not relevant if writing "
-                "to archive)");
-    po.Register("compress", &compress, "If true, write output in compressed form"
-                "(only currently supported for wxfilename, i.e. archive/script,"
-                "output)");
-*/
+
     po.Read(argc, argv);
 
     if (po.NumArgs() != 3) {
@@ -74,7 +67,7 @@ int main(int argc, char *argv[]) {
           for (; !sphinx_reader.Done(); sphinx_reader.Next(), num_done++)
             kaldi_writer.Write(sphinx_reader.Key(), sphinx_reader.Value());
         } else {
-          //SequentialBaseFloatMatrixReader kaldi_reader(rspecifier);
+
         	SequentialTokenVectorReader kaldi_reader(rspecifier); //ref compute-cmvn-stats.cc
         	RandomAccessBaseFloatVectorReader feat_reader(dictrsecifier);
 
@@ -94,23 +87,14 @@ int main(int argc, char *argv[]) {
                  }else{
                 	 //std::cout<<utt<<feat_reader.Value(utt)<<"\n";
                 	 const Vector<BaseFloat> &valuelist=feat_reader.Value(word);
-                	 //SubVector<BaseFloat> bfloat(valuelist);
-                	 //new_feats.AddVecToRows(1.0,bfloat);
+
                 	 SubVector<float> rowdata=new_feats.Row(MatrixIndexT(i));
                 	 rowdata.CopyFromVec(valuelist);
-                	/*
-                	 for (MatrixIndexT j=0; j< new_feats.NumCols();j++){
-                		 rowdata[j]=bfloat(j);
-                		 //new_feats.CopyRowsFromVec(valuelist); //=1.0;
-                	 }
-                	 */
-                 }
-              }
+
+                 	 }
+              	  }
               kaldi_writer.Write(key, new_feats);
-        	 // KALDI_LOG<<kaldi_reader.Key()<<kaldi_reader.Value();
-//change embeded matrix value here
-//kaldi_writer.Write(kaldi_reader.Key(), kaldi_reader.Value());
-		}
+			}
         }
       } else {
         CompressedMatrixWriter kaldi_writer(wspecifier);
