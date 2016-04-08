@@ -4,7 +4,7 @@
 ##Kaldi Speech Recognition Toolkit For NLP (WIP)
 
 This is Kaldi for NLP, mainly the i-vector frame-work.
-This project have embed-feats function wich allow feature embedding through word2vec.
+This project has embed-feats function wich allow feature embedding through word2vec.
 
 
 See embed-feats or egs/NLP/test for more info.
