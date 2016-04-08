@@ -1,0 +1,36 @@
+0001 Kaldi Speech Recognition Toolkit
+0002 To build the toolkit  see   INSTALL  These instructions are valid for UNIX systems including various flavors of Linux; Darwin; and Cygwin (has not been tested on more "exotic" varieties of UNIX)  For Windows installation instructions (excluding Cygwin)  see windows INSTALL 
+0003 To run the example system builds  see egs README txt
+0004 If you encounter problems (and you probably will)  please do not hesitate to contact the developers (see below)  In addition to specific questions  please let us know if there are specific aspects of the project that you feel could be improved  that you find confusing  etc   and which missing features you most wish it had 
+0005 Kaldi information channels
+0006 For HOT news about Kaldi see the project site 
+0007 Documentation of Kaldi 
+0008 Info about the project  description of techniques  tutorial for C++ coding 
+0009 Doxygen reference of the C++ code 
+0010 Kaldi forums and mailing lists 
+0011 User list kaldi-help  Web interface archive    Subscribe    Post
+0012 Developer list kaldi-developers  Web interface archive    Subscribe    Post
+0013 Also try luck and search in SourceForge archives 
+0014 Development pattern for contributors
+0015 Create a personal fork of the main Kaldi repository in GitHub 
+0016 Make your changes in a named branch different from master  e g  you create a branch my-awesome-feature 
+0017 Generate a pull request through the Web interface of GitHub 
+0018 As a general rule  please follow Google C++ Style Guide  There are a few exceptions in Kaldi  You can use the Google's cpplint py to verify that your code is free of basic mistakes 
+0019 Kaldi Speech Recognition Toolkit
+0020 To build the toolkit  see   INSTALL  These instructions are valid for UNIX systems including various flavors of Linux; Darwin; and Cygwin (has not been tested on more "exotic" varieties of UNIX)  For Windows installation instructions (excluding Cygwin)  see windows INSTALL 
+0021 To run the example system builds  see egs README txt
+0022 If you encounter problems (and you probably will)  please do not hesitate to contact the developers (see below)  In addition to specific questions  please let us know if there are specific aspects of the project that you feel could be improved  that you find confusing  etc   and which missing features you most wish it had 
+0023 Kaldi information channels
+0024 For HOT news about Kaldi see the project site 
+0025 Documentation of Kaldi 
+0026 Info about the project  description of techniques  tutorial for C++ coding 
+0027 Doxygen reference of the C++ code 
+0028 Kaldi forums and mailing lists 
+0029 User list kaldi-help  Web interface archive    Subscribe    Post
+0030 Developer list kaldi-developers  Web interface archive    Subscribe    Post
+0031 Also try luck and search in SourceForge archives 
+0032 Development pattern for contributors
+0033 Create a personal fork of the main Kaldi repository in GitHub 
+0034 Make your changes in a named branch different from master  e g  you create a branch my-awesome-feature 
+0035 Generate a pull request through the Web interface of GitHub 
+0036 As a general rule  please follow Google C++ Style Guide  There are a few exceptions in Kaldi  You can use the Google's cpplint py to verify that your code is free of basic mistakes 
